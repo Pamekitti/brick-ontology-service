@@ -1,5 +1,11 @@
 # Brick Backend
 
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.68+-blue?style=flat&logo=fastapi)](https://fastapi.tiangolo.com)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)](https://www.python.org)
+[![RDFLib](https://img.shields.io/badge/RDFLib-6.0+-blue?style=flat)](https://rdflib.readthedocs.io)
+[![BrickSchema](https://img.shields.io/badge/BrickSchema-0.7+-blue?style=flat)](https://brickschema.org)
+[![Tests](https://img.shields.io/badge/Tests-Pytest-green?style=flat&logo=pytest)](https://docs.pytest.org)
+
 This repository contains the backend server implementation for the Brick project, a RESTful API service that manages and queries building data using the Brick schema ontology.
 
 ## About Brick
@@ -66,7 +72,3 @@ pytest
 - [FastAPI](https://fastapi.tiangolo.com/) - FastAPI framework
 - [RDFLib](https://rdflib.readthedocs.io/) - RDF library for Python
 - [BrickSchema Python](https://github.com/BrickSchema/py-brickschema) - Python library for Brick
-
-## License
-
-[Add your license information here] 
