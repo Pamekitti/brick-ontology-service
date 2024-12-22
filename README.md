@@ -12,6 +12,12 @@ This repository contains the backend server implementation for the Brick project
 
 Brick is a standardized ontology-based schema for describing building components, their relationships, and their operations. This backend implementation provides a FastAPI-based service that simplifies RDF data management.
 
+The project includes:
+- RESTful API for querying building data
+- Building model generation utilities
+- Support for multiple building types (office, lab, hospital, retail)
+- Standard equipment templates (AHU, VAV, Chiller)
+
 ## Project Structure
 
 ```
@@ -19,6 +25,10 @@ Brick is a standardized ontology-based schema for describing building components
 │   ├── api/        # API endpoints and routes
 │   ├── models/     # Data models and schemas
 │   └── services/   # Business logic and services
+├── examples/       # Example scripts and usage demos
+│   ├── query_examples.py     # API query examples
+│   ├── device_examples.py    # Device interaction examples
+│   └── building_generator.py # Building model generator
 ├── tests/          # Test files
 ├── .assets/        # Asset files (TTL files)
 ├── .env           # Environment variables (not tracked in git)
@@ -52,6 +62,24 @@ To start the server:
 python run.py
 ```
 
+## Examples
+
+Check out the `examples/` directory for sample code and usage demonstrations:
+- Basic API queries
+- Working with devices and points
+- SPARQL query examples
+- Building data exploration
+- Building model generation
+
+The building generator supports various building types:
+- Office buildings with multiple floors
+- Laboratory buildings with specialized HVAC
+- Hospital wings with critical zones
+- Retail stores with open plans
+- Multi-building campus settings
+
+See [examples/README.md](examples/README.md) for detailed information.
+
 ## Testing
 
 To run tests:
@@ -65,6 +93,7 @@ pytest
 - Tests are located in the `tests/` directory
 - Environment variables should be configured in `.env`
 - Building data is stored in TTL files in the `.assets/` directory
+- Use the building generator to create new building models
 
 ## References
 
