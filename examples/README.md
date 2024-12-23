@@ -70,8 +70,6 @@ You can create custom buildings using JSON configuration:
 
 ### Find all VAV boxes
 ```sparql
-PREFIX brick: <https://brickschema.org/schema/Brick#>
-
 SELECT ?vav ?label
 WHERE {
     ?vav a brick:VAV .
@@ -81,8 +79,6 @@ WHERE {
 
 ### Find Temperature Sensors
 ```sparql
-PREFIX brick: <https://brickschema.org/schema/Brick#>
-
 SELECT ?device ?label ?location
 WHERE {
     ?device a brick:Temperature_Sensor .
@@ -96,8 +92,6 @@ WHERE {
 
 ### Find Points Connected to VAVs
 ```sparql
-PREFIX brick: <https://brickschema.org/schema/Brick#>
-
 SELECT ?device ?point ?point_type
 WHERE {
     ?device a brick:VAV .
